@@ -1,0 +1,320 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-type" content="text/html;charset=UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+    <title>Your Business - Home</title>
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
+    <script src="http://maps.google.com/maps?file=api&amp;v=2&amp;sensor=true&amp;key=ABQIAAAAH98Kqhz5RYb4hjqrVA6qhhRY2Dx3LGuleOdB77j29-vf3RDfbRTA5YX2stuicNxmZsqJF8BqoYAbFg" type="text/javascript"></script>
+    <script src="js/gps.jquery.js"></script>
+    <script src="js/simpleCart.js"></script>
+
+
+    <script src="js/main.js"></script>
+    <script src="jquery.mobile-1.4.1/jquery.mobile-1.4.1.min.js"></script>
+    <script src="jquery.mobile-1.4.1/jquery.mobile-1.4.1.min.map"></script>
+    <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/themes/smoothness/jquery-ui.css" />
+    <link rel="stylesheet" href="jquery.mobile-1.4.1/jquery.mobile-1.4.1.css" />
+    <link rel="stylesheet" href="css/page.css" />
+
+
+
+
+
+
+</head>
+
+<body onunload="GUnload()">
+<section data-role="page" id="main"  ><header data-role="header" data-position="fixed"><h1>Your Restaurant</h1></header>
+    <nav>
+        <ul data-role="listview" >
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#location">Location</a></li>
+            <li><a href="#account">My Account</a></li>
+            <li><a href="#aboutus">About Us</a></li>
+            <li><a href="#callus">Call Us</a></li>
+            <li><a href="#contacts">Add a New Contact to Your phone</a></li>
+
+
+
+
+        </ul>
+
+    </nav>
+
+
+    <h2>Welcome to my Site</h2>
+    <div id="img_container"><img id='image2' src='images/food.jpg' alt='img'/></div>
+
+</section>
+
+<section data-role="page" id="callus">
+    <div data-role="header" data-position="fixed">
+        <h1>Call Us</h1>
+        <a href="index.html" data-icon="back" data-iconpos="left" rel="external" class="ui-btn-right">Back</a>
+    </div>
+
+    <div class="callus">
+        <h2>YOU CAN REACH US AT</h2>
+
+        <nav>
+            <ul data-role="listview" >
+                <li><a href="tel:555555555">555-555-5555</a></li>
+            </ul>
+        </nav>
+    </div>
+    <footer data-role="footer" data-position="fixed">Footer</footer>
+
+</section>
+
+<section data-role="page" id="menu">
+    <div data-role="header" data-position="fixed">
+        <h1>Menu</h1>
+        <a href="index.html" data-icon="back" data-iconpos="left" rel="external" class="ui-btn-right">Back</a>
+    </div>
+    <nav>
+        <ul data-role="listview" >
+            <li><a href="#order">Show Current Order or See Past Fav Order</a></li>
+        </ul>
+    </nav><table border='1'><tr><td>Name</td><td>Image</td><td>Price</td><td>Order</td></tr>
+    <tr class='simpleCart_shelfItem'>
+        <td class='item_name'> Pepperoni pizza </td>
+        <td><img src='images/pizza1.jpg' /></td>
+        <td class='item_price''> 8 </td>
+        <td><a class='item_add' href='javascript:;'> Add to Cart </a></td>
+
+    </tr>
+    <tr class='simpleCart_shelfItem'>
+        <td class='item_name'> Pinapple pizza </td>
+        <td><img src='images/pizza2.jpg' /></td>
+        <td class='item_price''> 10 </td>
+        <td><a class='item_add' href='javascript:;'> Add to Cart </a></td>
+
+    </tr>
+    <tr class='simpleCart_shelfItem'>
+        <td class='item_name'> Chicken pizza </td>
+        <td><img src='images/pizza3.jpg' /></td>
+        <td class='item_price''> 15 </td>
+        <td><a class='item_add' href='javascript:;'> Add to Cart </a></td>
+
+    </tr>
+    <tr class='simpleCart_shelfItem'>
+        <td class='item_name'> Chicken salad </td>
+        <td><img src='images/salad1.jpg' /></td>
+        <td class='item_price''> 5 </td>
+        <td><a class='item_add' href='javascript:;'> Add to Cart </a></td>
+
+    </tr>
+    <tr class='simpleCart_shelfItem'>
+        <td class='item_name'> Meat salad </td>
+        <td><img src='images/salad2.jpg' /></td>
+        <td class='item_price''> 4 </td>
+        <td><a class='item_add' href='javascript:;'> Add to Cart </a></td>
+
+    </tr>
+    <tr class='simpleCart_shelfItem'>
+        <td class='item_name'> Caesar salad </td>
+        <td><img src='images/salad3.jpg' /></td>
+        <td class='item_price''> 2 </td>
+        <td><a class='item_add' href='javascript:;'> Add to Cart </a></td>
+
+    </tr>
+    <tr class='simpleCart_shelfItem'>
+        <td class='item_name'> Coke zero </td>
+        <td><img src='images/soda1.jpg' /></td>
+        <td class='item_price''> 1 </td>
+        <td><a class='item_add' href='javascript:;'> Add to Cart </a></td>
+
+    </tr>
+    <tr class='simpleCart_shelfItem'>
+        <td class='item_name'> Coka cola </td>
+        <td><img src='images/soda2.jpg' /></td>
+        <td class='item_price''> 1 </td>
+        <td><a class='item_add' href='javascript:;'> Add to Cart </a></td>
+
+    </tr>
+    <tr class='simpleCart_shelfItem'>
+        <td class='item_name'> Mountain dew </td>
+        <td><img src='images/soda3.jpg' /></td>
+        <td class='item_price''> 1 </td>
+        <td><a class='item_add' href='javascript:;'> Add to Cart </a></td>
+
+    </tr>
+    <tr class='simpleCart_shelfItem'>
+        <td class='item_name'> Pepsi </td>
+        <td><img src='images/soda4.jpg' /></td>
+        <td class='item_price''> 1 </td>
+        <td><a class='item_add' href='javascript:;'> Add to Cart </a></td>
+
+    </tr>
+    <tr class='simpleCart_shelfItem'>
+        <td class='item_name'> Pepsi cherry </td>
+        <td><img src='images/soda5.jpg' /></td>
+        <td class='item_price''> 1 </td>
+        <td><a class='item_add' href='javascript:;'> Add to Cart </a></td>
+
+    </tr>
+    <tr class='simpleCart_shelfItem'>
+        <td class='item_name'> Gatorade </td>
+        <td><img src='images/soda6.jpg' /></td>
+        <td class='item_price''> 1 </td>
+        <td><a class='item_add' href='javascript:;'> Add to Cart </a></td>
+
+    </tr>
+    <tr class='simpleCart_shelfItem'>
+        <td class='item_name'> Chesse Pizza </td>
+        <td><img src='images/pizza.jpg' /></td>
+        <td class='item_price''> 6 </td>
+        <td><a class='item_add' href='javascript:;'> Add to Cart </a></td>
+
+    </tr></table><footer data-role="footer" data-position="fixed">Footer</footer>
+
+
+</section>
+
+<section data-role="page" id="order">
+
+    <div data-role="header" data-position="fixed">
+        <h1>Order</h1>
+        <a href="#menu" data-icon="back" data-iconpos="left" rel="external" class="ui-btn-right">Back</a>
+    </div>
+    <span class="simpleCart_quantity"></span> items - <span class="simpleCart_total"></span>
+    <div class="simpleCart_items"></div>
+    <a href="javascript:;" class="simpleCart_checkout">Checkout</a>
+
+    <footer data-role="footer" data-position="fixed">Footer</footer>
+
+</section>
+
+<section data-role="page" id="location">
+    <div data-role="header" data-position="fixed">
+        <h1>Location</h1>
+        <a href="index.html" data-icon="back" data-iconpos="left" rel="external" class="ui-btn-right">Back</a>
+    </div>
+    <h3>Location & Phone</h3>
+    <p>Phone:<a href="tel:555555555">555-555-5555</a> Address: 1111 E Mission Ave, Spokane, WA 99202</p>
+    <div id="image">
+        <h2>Welcome</h2>
+        <img id="restaurant" src="images/restaurant.jpg" alt=""/>
+    </div>
+    <style>
+        #d_map {
+            width: 500px;
+            height: 200px;
+        }
+    </style>
+    <script type="text/javascript">
+        $(function() {
+            $("#d_map").googleMap({
+                zoomLevel: 15,
+                tooltip: 'Spokane Community College 1810 N Greene St Spokane, WA 99217'
+
+            }).load();
+
+        });
+    </script>
+    <div id="directions"></div>
+    <div id="d_map"></div>
+
+    <form action="directions.php" method="post" data-role="map">
+        <p><b>From: </b><input id="end" type="text" value="" />
+            <b>To: </b><input id="start" type="text" /></p>
+        <input name="submit" id="getdirections" type="submit" value="Get Directions" />
+    </form>
+    <footer data-role="footer" data-position="fixed">Footer</footer>
+</section>
+
+<section data-role="page" id="account">
+    <div data-role="header" data-position="fixed">
+        <h1>Account</h1>
+        <a href="index.html" data-icon="back" data-iconpos="left" rel="external" class="ui-btn-right">Back</a>
+    </div>
+    <form action="http://www.cis217-m.netfordev.com/#account" method="get" class="ui-body ui-body-a ui-corner-all">
+        <fieldset class="sectionone">
+            Name: <input type="text" name="name" value=""><br>
+            Address: <input type="text" name="address" value=""><br>
+            Phone: <input type="text" name="phone" value=""><br>
+            <button type="submit" data-theme="b" name="submit" value="submit-value">Submit</button>
+        </fieldset>
+
+    </form><div><img id='image3' src='images/clickMe.png' alt='img' /></div><footer data-role="footer" data-position="fixed">Footer</footer>
+</section>
+
+<section data-role="page" id="aboutus">
+    <div data-role="header" data-position="fixed">
+        <h1>About Us</h1>
+        <a href="index.html" data-icon="back" data-iconpos="left" rel="external" class="ui-btn-right">Back</a>
+    </div>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pharetra congue dolor, at sodales neque semper
+        bibendum. Mauris ut massa ornare, iaculis augue vel, posuere urna. In at magna sed arcu eleifend gravida ut id
+        leo. Aliquam viverra tellus in purus congue euismod non ac nunc. Ut molestie eu libero aliquam cursus. Nulla et
+        tellus interdum nulla auctor molestie. Nunc urna risus, blandit eget est ut, tristique consequat nibh. Aliquam
+        pharetra suscipit auctor. Cras in sagittis purus. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+
+    <footer data-role="footer" data-position="fixed">Footer</footer>
+</section>
+
+<section data-role="page" id="contacts">
+    <div data-role="header" data-position="fixed">
+        <h1>Add Contact</h1>
+        <a href="index.html" data-icon="back" data-iconpos="left" rel="external" class="ui-btn-right">Back</a>
+    </div>
+    <script type="text/javascript" charset="utf-8" src="cordova.js"></script>
+
+
+    <script>
+
+        function newContact() {
+            function newContactSuccess() {
+                alert("Contact Added To your Mobile Device")
+                window.location = "index.html";
+            }
+
+            var contact = navigator.contacts.create();
+            var name = new ContactName();
+            var homeNumbers = [];
+
+            name.fullName = $("#name").val();
+
+            contact.displayName = $("#displayName").val();
+            contact.name = name;
+
+            homeNumbers[0] = new ContactField('home', $("#homeNumber").val(), false);
+            contact.phoneNumbers = homeNumbers;
+
+            contact.save(newContactSuccess());
+        }
+
+
+    </script>
+
+    <div>
+        <form>
+        <label for="displayName">Display name</label>
+        <input type="text" name="displayName" id="displayName" value="" placeholder="Display Name"/>
+
+        <label for="name">Full Name</label>
+        <input type="text" name="name" id="name" value="" placeholder="Full Name"/>
+
+        <label for="homeNumber">Home Phone number</label>
+        <input type="text" name="homeNumber" id="homeNumber" value="" placeholder="Phone Number"/>
+        </form>
+    </div>
+    <button onclick="newContact();">Add Contact</button>
+
+    <footer data-role="footer" data-position="fixed">Footer</footer>
+</section>
+
+
+
+
+
+
+</body>
+</html>
